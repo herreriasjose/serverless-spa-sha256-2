@@ -45,10 +45,11 @@ class Layout extends Component {
     } else {
        
       const icon = this.state.icon.slice();
+      const text = this.state.text.slice();
       
       icon[obj.boxId] = "Busy";
-      
-      this.setState({ icon: icon});
+      text[obj.boxId] = "";
+      this.setState({ icon: icon, text: text});
     }
   }
 
