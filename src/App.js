@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Layout from "./containers/Layout"
+import Footer from "./Footer";
 
 import './App.css';
 import './bootstrap/css/bootstrap.min.css';
@@ -18,13 +19,11 @@ class App extends Component {
             <div className="row">
               <div className="col-1 col-sm-1 col-md-1 col-lg-4 col-xl-4" />
               <div className="col-10 col-sm-10 col-md-10 col-lg-4 col-xl-4">
-              <nav aria-label="breadcrumb">
-                  <ol className="breadcrumb">
-                    <li className="breadcrumb-item active text-justify text-center" aria-current="page">
+              <p>
                     Checks the integrity of 2 files using SHA-256
-                    </li>
-                  </ol>
-                </nav>
+                  
+                  
+                </p>
               </div>
               <div className="col-1 col-sm-1 col-md-1 col-lg-4 col-xl-4" />
             </div>
@@ -67,7 +66,8 @@ class App extends Component {
           </div>
         </span>
       
-      </div>
+      </div><br/>
+      <Footer/>
       </div>
     );
   }
